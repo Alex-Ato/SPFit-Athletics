@@ -10,3 +10,7 @@ a{
     color: #CE778B;
     font-weight: 600;
 }
+.shadow {
+    border: 1px solid;
+    box-shadow: 5px 10px ;
+  }
