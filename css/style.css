@@ -1,0 +1,12 @@
+
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    font-size: 30px;
+    color: #CE778B;
+    font-weight: 600;
+}
