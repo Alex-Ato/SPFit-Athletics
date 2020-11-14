@@ -5,41 +5,6 @@ Project #4 Business Redevelopment
 prototype link
 https://xd.adobe.com/view/cf8d23df-3eae-488d-ab14-feb73f3fdc43-9ade/screen/090feac2-c1fc-4725-9240-cc6a56d86ba2
 */
-.center{
-    display: flex;
-    justify-content: center;
-}
-a{
-    font-size: 30px;
-    color: #CE778B;
-    font-weight: 600;
-}
-.shadow {
-    border-bottom: 1px solid;
-    box-shadow: 5px 10px ;
-  }
-.nav-link:hover{
-    color: black;
-}
-.active{
-    text-decoration: underline;
-    
-}
-
-.topColor{
-    background-color: #FEF9F9;
-}
-
-.picFormat2{
-    width: 104%;
-    height: 103%;
-}
-
-.blurr{
-    filter: blur(3px);
-  -webkit-filter: blur(3px);
-}
-
 @font-face{
     font-family: 'Lucida Calligraphy';
     src: url(../fonts/lucida-calligraphy/LCALLIG.ttf);
@@ -60,10 +25,81 @@ a{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/*Nav Links************************************************/
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+a{
+    font-size: 30px;
+    color: #CE778B;
+    font-weight: 600;
+}
+.Bottomshadow {
+    
+    box-shadow: 0px 25px 20px 5px #e6e5e5; 
+}
+.nav-link:hover{
+    border-left: 5px solid #e6bec7;
+    border-right: 5px solid #e6bec7;
+    color: #CE778B;
+}
+.active{
+    text-decoration: underline;
+}
+
+/*Large Carousel on Home*********************************************/
+
+.picFormat{
+    width: 104%;
+}
+.blurr{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+.namePrice{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.topSpace{
+    margin-top: 6%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.picFormat2{
+    width: 100%;
+    
+}
+
+/*Top Picks*************************************************************/
+
+.topColor{
+    background-color: #FEF9F9;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+
+/*Footer  ********************************************************************/
+
 .lightGray{
     background-color: #f2f2f2;
 }
-
+  .blackoutOverlay:hover .overlay1 {
+      opacity: 1;
+  }
 .instagramSize{
     width: 10%;
     height: auto;
@@ -98,26 +134,4 @@ a{
 .newsAdjust{
     margin-left: 5%;
 }
-
-
-.overlay1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .3s ease;
-  }
-
-  .blackoutOverlay:hover .overlay1 {
-      opacity: 1;
-  }
-
-/* .picFormat3{
-    width: 100%;
-    height: 670px;
-} */
 
