@@ -40,6 +40,82 @@ a{
   -webkit-filter: blur(3px);
 }
 
+@font-face{
+    font-family: 'Lucida Calligraphy';
+    src: url(../fonts/lucida-calligraphy/LCALLIG.ttf);
+}
+@font-face{
+    font-family: 'Gabriola';
+    src: url(../fonts/gabriola/gabriola.ttf);
+}
+.lucidaFont{
+    font-family: 'Lucida Calligraphy';
+}
+
+.gabriolaFont{
+    font-family: 'Gabriola';
+}
+
+.georgiaFont{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lightGray{
+    background-color: #f2f2f2;
+}
+
+.instagramSize{
+    width: 10%;
+    height: auto;
+}
+
+.checkUsOutFont{
+    font-size:40px;
+}
+.buttonHeight{
+    height: 53%;
+}
+
+.NoPadding{
+    padding: 0 !important; 
+    margin: 0 !important;
+}
+.copyrightPadding{
+    padding-right: 3%;
+}
+
+.card-body{
+    background-color: #FEF9F9;
+    
+}
+.card{
+    border: none;
+    background-color: #FEF9F9;
+}
+.news{
+    font-size: 50px;
+}
+.newsAdjust{
+    margin-left: 5%;
+}
+
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+  .blackoutOverlay:hover .overlay1 {
+      opacity: 1;
+  }
+
 /* .picFormat3{
     width: 100%;
     height: 670px;
