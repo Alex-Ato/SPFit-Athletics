@@ -9,8 +9,12 @@ https://xd.adobe.com/view/cf8d23df-3eae-488d-ab14-feb73f3fdc43-9ade/screen/090fe
     display: flex;
     justify-content: center;
 }
-a{
-    font-size: 30px;
+.centered{
+    display: flex;
+    justify-content: center;
+}
+.changeTex{
+    font-size: 25px;
     color: #CE778B;
     font-weight: 600;
 }
@@ -23,15 +27,15 @@ a{
     border-right: 5px solid #e6bec7;
     color: #CE778B;
 }
-.active{
+.activePage{
     text-decoration: underline;
 }
 .topColor{
     background-color: #FEF9F9;
 }
 .picFormat{
-    width: 104%;
-}
+    width: 100%;
+ }
 .blurr{
     filter: blur(3px);
   -webkit-filter: blur(3px);
@@ -53,5 +57,45 @@ a{
     .topSpace {
         margin-left: 0px;
         margin-right: 0px;
+    }
+  }
+
+.navbar-light{
+    color: #CE778B;
+}
+@media only screen and (max-width: 991px) {
+    .centered {
+        display: flex;
+        justify-content: end;
+        
+    }
+  }
+.centerNav{
+    color: #CE778B;
+    border-color: #CE778B;
+  padding: 6px;
+ 
+}
+.heroImage{
+    height: 100%;
+    background-image: url("../image/logoHImage.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.reSize{
+    margin-left: 88%;
+    margin-top: 93px;
+}
+.reSize2{
+margin-left: 2%;
+}
+@media only screen and (max-width: 690px) {
+    .reSize {
+        margin-left: 75%;
+    margin-top: 80px;
+        
     }
   }
