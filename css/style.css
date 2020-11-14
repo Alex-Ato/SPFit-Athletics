@@ -5,6 +5,28 @@ Project #4 Business Redevelopment
 prototype link
 https://xd.adobe.com/view/cf8d23df-3eae-488d-ab14-feb73f3fdc43-9ade/screen/090feac2-c1fc-4725-9240-cc6a56d86ba2
 */
+@font-face{
+    font-family: 'Lucida Calligraphy';
+    src: url(../fonts/lucida-calligraphy/LCALLIG.ttf);
+}
+@font-face{
+    font-family: 'Gabriola';
+    src: url(../fonts/gabriola/gabriola.ttf);
+}
+.lucidaFont{
+    font-family: 'Lucida Calligraphy';
+}
+
+.gabriolaFont{
+    font-family: 'Gabriola';
+}
+
+.georgiaFont{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Nav Links************************************************/
+
 .center{
     display: flex;
     justify-content: center;
@@ -26,20 +48,21 @@ a{
 .active{
     text-decoration: underline;
 }
-.topColor{
-    background-color: #FEF9F9;
-}
+
+/*Large Carousel on Home*********************************************/
+
 .picFormat{
     width: 104%;
 }
 .blurr{
     filter: blur(3px);
-  -webkit-filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 .namePrice{
     font-weight: 700;
     font-size: 20px;
 }
+
 .topSpace{
     margin-top: 6%;
     margin-left: 100px;
@@ -49,3 +72,66 @@ a{
     width: 100%;
     
 }
+
+/*Top Picks*************************************************************/
+
+.topColor{
+    background-color: #FEF9F9;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+
+/*Footer  ********************************************************************/
+
+.lightGray{
+    background-color: #f2f2f2;
+}
+  .blackoutOverlay:hover .overlay1 {
+      opacity: 1;
+  }
+.instagramSize{
+    width: 10%;
+    height: auto;
+}
+
+.checkUsOutFont{
+    font-size:40px;
+}
+.buttonHeight{
+    height: 53%;
+}
+
+.NoPadding{
+    padding: 0 !important; 
+    margin: 0 !important;
+}
+.copyrightPadding{
+    padding-right: 3%;
+}
+
+.card-body{
+    background-color: #FEF9F9;
+    
+}
+.card{
+    border: none;
+    background-color: #FEF9F9;
+}
+.news{
+    font-size: 50px;
+}
+.newsAdjust{
+    margin-left: 5%;
+}
+
