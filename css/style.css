@@ -5,16 +5,91 @@ Project #4 Business Redevelopment
 prototype link
 https://xd.adobe.com/view/cf8d23df-3eae-488d-ab14-feb73f3fdc43-9ade/screen/090feac2-c1fc-4725-9240-cc6a56d86ba2
 */
-.center{
-    display: flex;
-    justify-content: center;
+/* 
+  css add
+*/
+@font-face{
+    font-family: 'Lucida Calligraphy';
+    src: url(../fonts/lucida-calligraphy/LCALLIG.ttf);
+}
+@font-face{
+    font-family: 'Gabriola';
+    src: url(../fonts/gabriola/gabriola.ttf);
+}
+.lucidaFont{
+    font-family: 'Lucida Calligraphy';
+}
+
+.gabriolaFont{
+    font-family: 'Gabriola';
+}
+
+.georgiaFont{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Nav Links************************************************/
+
+.changeTex{
+    font-size: 25px;
+    color: #CE778B;
+    font-weight: 600;
 }
 .centered{
     display: flex;
     justify-content: center;
 }
-.changeTex{
-    font-size: 25px;
+.activePage{
+    text-decoration: underline;
+}
+.topColor{
+    background-color: #FEF9F9;
+}
+.reSize{
+    margin-left: 88%;
+    margin-top: 93px;
+}
+.reSize2{
+margin-left: 2%;
+}
+@media only screen and (max-width: 690px) {
+    .reSize {
+        margin-left: 75%;
+    margin-top: 80px;
+        
+    }
+  }
+.navbar-light{
+    color: #CE778B;
+}
+@media only screen and (max-width: 991px) {
+    .centered {
+        display: flex;
+        justify-content: end;
+        
+    }
+}
+.centerNav{
+    color: #CE778B;
+    border-color: #CE778B;
+    padding: 6px;
+ 
+}
+.heroImage{
+    height: 100%;
+    background-image: url("../image/logoHImage.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+a{
+    font-size: 30px;
     color: #CE778B;
     font-weight: 600;
 }
@@ -27,18 +102,18 @@ https://xd.adobe.com/view/cf8d23df-3eae-488d-ab14-feb73f3fdc43-9ade/screen/090fe
     border-right: 5px solid #e6bec7;
     color: #CE778B;
 }
-.activePage{
+.active{
     text-decoration: underline;
 }
-.topColor{
-    background-color: #FEF9F9;
-}
+
+/*Large Carousel on Home*********************************************/
+
 .picFormat{
     width: 100%;
- }
+}
 .blurr{
     filter: blur(3px);
-  -webkit-filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 .namePrice{
     font-weight: 700;
@@ -58,44 +133,70 @@ https://xd.adobe.com/view/cf8d23df-3eae-488d-ab14-feb73f3fdc43-9ade/screen/090fe
         margin-left: 0px;
         margin-right: 0px;
     }
-  }
+}
 
-.navbar-light{
-    color: #CE778B;
+/*Top Picks*************************************************************/
+
+.topColor{
+    background-color: #FEF9F9;
 }
-@media only screen and (max-width: 991px) {
-    .centered {
-        display: flex;
-        justify-content: end;
-        
-    }
-  }
-.centerNav{
-    color: #CE778B;
-    border-color: #CE778B;
-  padding: 6px;
- 
-}
-.heroImage{
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
-    background-image: url("../image/logoHImage.JPG");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
 }
-.reSize{
-    margin-left: 88%;
-    margin-top: 93px;
+
+/*Footer  ********************************************************************/
+
+.lightGray{
+    background-color: #f2f2f2;
 }
-.reSize2{
-margin-left: 2%;
+.blackoutOverlay:hover .overlay1 {
+      opacity: 1;
 }
-@media only screen and (max-width: 690px) {
-    .reSize {
-        margin-left: 75%;
-    margin-top: 80px;
-        
-    }
-  }
+.instagramSize{
+    width: 10%;
+    height: auto;
+}
+.checkUsOutFont{
+    font-size:40px;
+}
+.buttonHeight{
+    height: 53%;
+}
+.NoPadding{
+    padding: 0 !important; 
+    margin: 0 !important;
+}
+.copyrightPadding{
+    padding-right: 3%;
+}
+.card-body{
+    background-color: #FEF9F9;   
+}
+.card{
+    border: none;
+    background-color: #FEF9F9;
+}
+.news{
+    font-size: 50px;
+}
+.newsAdjust{
+    margin-left: 5%;
+}
+/*Gallery************************************************/
+.changeTitle{
+    margin-left: 16%;
+    font-size: 60px;
+    color: #CE778B;
+    font-weight: 600;
+}
+hr{
+    border-top: 3px solid #e6e6e6;
+}
