@@ -109,7 +109,7 @@ a{
 /*Large Carousel on Home*********************************************/
 
 .picFormat{
-    width: 100%;
+    width: 80%;
 }
 .blurr{
     filter: blur(3px);
