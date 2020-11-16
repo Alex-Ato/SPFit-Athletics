@@ -5,6 +5,9 @@ Project #4 Business Redevelopment
 prototype link
 https://xd.adobe.com/view/cf8d23df-3eae-488d-ab14-feb73f3fdc43-9ade/screen/090feac2-c1fc-4725-9240-cc6a56d86ba2
 */
+/* 
+  css add
+*/
 @font-face{
     font-family: 'Lucida Calligraphy';
     src: url(../fonts/lucida-calligraphy/LCALLIG.ttf);
@@ -27,6 +30,60 @@ https://xd.adobe.com/view/cf8d23df-3eae-488d-ab14-feb73f3fdc43-9ade/screen/090fe
 
 /*Nav Links************************************************/
 
+.changeTex{
+    font-size: 25px;
+    color: #CE778B;
+    font-weight: 600;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+}
+.activePage{
+    text-decoration: underline;
+}
+.topColor{
+    background-color: #FEF9F9;
+}
+.reSize{
+    margin-left: 88%;
+    margin-top: 93px;
+}
+.reSize2{
+margin-left: 2%;
+}
+@media only screen and (max-width: 690px) {
+    .reSize {
+        margin-left: 75%;
+    margin-top: 80px;
+        
+    }
+  }
+.navbar-light{
+    color: #CE778B;
+}
+@media only screen and (max-width: 991px) {
+    .centered {
+        display: flex;
+        justify-content: end;
+        
+    }
+}
+.centerNav{
+    color: #CE778B;
+    border-color: #CE778B;
+    padding: 6px;
+ 
+}
+.heroImage{
+    height: 100%;
+    background-image: url("../image/logoHImage.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
 .center{
     display: flex;
     justify-content: center;
@@ -52,7 +109,7 @@ a{
 /*Large Carousel on Home*********************************************/
 
 .picFormat{
-    width: 104%;
+    width: 100%;
 }
 .blurr{
     filter: blur(3px);
@@ -62,7 +119,6 @@ a{
     font-weight: 700;
     font-size: 20px;
 }
-
 .topSpace{
     margin-top: 6%;
     margin-left: 100px;
@@ -70,7 +126,13 @@ a{
 }
 .picFormat2{
     width: 100%;
-    
+    height: auto;
+}
+@media only screen and (max-width: 600px) {
+    .topSpace {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 /*Top Picks*************************************************************/
@@ -78,7 +140,6 @@ a{
 .topColor{
     background-color: #FEF9F9;
 }
-
 .overlay1 {
     position: absolute;
     top: 0;
@@ -89,29 +150,29 @@ a{
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-  }
-
+}
 
 /*Footer  ********************************************************************/
 
+.extraMarginTopPad{
+    margin-top: 6%;
+}
 .lightGray{
     background-color: #f2f2f2;
 }
-  .blackoutOverlay:hover .overlay1 {
+.blackoutOverlay:hover .overlay1 {
       opacity: 1;
-  }
+}
 .instagramSize{
     width: 10%;
     height: auto;
 }
-
 .checkUsOutFont{
     font-size:40px;
 }
 .buttonHeight{
     height: 53%;
 }
-
 .NoPadding{
     padding: 0 !important; 
     margin: 0 !important;
@@ -119,10 +180,8 @@ a{
 .copyrightPadding{
     padding-right: 3%;
 }
-
 .card-body{
-    background-color: #FEF9F9;
-    
+    background-color: #FEF9F9;   
 }
 .card{
     border: none;
@@ -134,4 +193,17 @@ a{
 .newsAdjust{
     margin-left: 5%;
 }
+/*Gallery************************************************/
+.changeTitle{
+    margin-left: 16%;
+    font-size: 60px;
+    color: #CE778B;
+    font-weight: 600;
+}
+hr{
+    border-top: 3px solid #e6e6e6;
+}
 
+.whiteBG{
+    background-color: white;
+}
