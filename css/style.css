@@ -28,6 +28,13 @@ https://xd.adobe.com/view/cf8d23df-3eae-488d-ab14-feb73f3fdc43-9ade/screen/090fe
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.NoPadding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+
 /*Nav Links************************************************/
 
 .changeTex{
@@ -45,9 +52,12 @@ https://xd.adobe.com/view/cf8d23df-3eae-488d-ab14-feb73f3fdc43-9ade/screen/090fe
 .topColor{
     background-color: #FEF9F9;
 }
+
+/*Resize is used for leggings adjustments **************************************/
+
 .reSize{
     margin-left: 88%;
-    margin-top: 93px;
+    margin-top: 130px;
 }
 .reSize2{
 margin-left: 2%;
@@ -109,7 +119,7 @@ a{
 /*Large Carousel on Home*********************************************/
 
 .picFormat{
-    width: 80%;
+    width: 100%;
 }
 .blurr{
     filter: blur(3px);
@@ -120,12 +130,12 @@ a{
     font-size: 20px;
 }
 .topSpace{
-    margin-top: 6%;
+    margin-top: 4%;
     margin-left: 100px;
     margin-right: 100px;
 }
 .picFormat2{
-    width: 100%;
+    width: 85%;
     height: auto;
 }
 @media only screen and (max-width: 600px) {
@@ -152,11 +162,21 @@ a{
     transition: .3s ease;
 }
 
+.topPickLegging{
+    font-size: 25px;
+}
+.topPickPrice{
+    font-size: 23px;
+}
+
+/*Shirts  ********************************************************************/
+.marginTopSpace{
+    margin-top: 4%;
+}
+
+
 /*Footer  ********************************************************************/
 
-.extraMarginTopPad{
-    margin-top: 6%;
-}
 .lightGray{
     background-color: #f2f2f2;
 }
@@ -164,21 +184,14 @@ a{
       opacity: 1;
 }
 .instagramSize{
-    width: 10%;
+    width: 45px;
     height: auto;
 }
 .checkUsOutFont{
     font-size:40px;
 }
 .buttonHeight{
-    height: 53%;
-}
-.NoPadding{
-    padding: 0 !important; 
-    margin: 0 !important;
-}
-.copyrightPadding{
-    padding-right: 3%;
+    height: 70%;
 }
 .card-body{
     background-color: #FEF9F9;   
@@ -191,8 +204,27 @@ a{
     font-size: 50px;
 }
 .newsAdjust{
-    margin-left: 5%;
+    margin-left: 0%;
 }
+
+.text-muted{
+    color: rgb(0, 0, 0);
+}
+
+/*Footer  Responsiveness************************************************************/
+
+.newsletterAdjust{
+    padding-right: 0%;
+}
+
+.copyrightPadding{
+    padding-right: 0%;
+}
+
+.formPadding{
+    padding-right: 0%;
+}
+
 /*Gallery************************************************/
 .changeTitle{
     margin-left: 16%;
@@ -207,3 +239,93 @@ hr{
 .whiteBG{
     background-color: white;
 }
+
+video{
+    max-width: 100%;
+    height: auto;
+}
+/*Media Queries************************************************************/
+
+@media only screen and (max-width: 425px){
+    .marginTopSpace{
+        margin-top: 10%;
+    }
+    .topSpace{
+        margin-top: 12%;
+    }
+
+    .picFormat2{
+        width: 100%;
+        height: auto;
+    }
+
+    .changeTitle{
+        margin-left: 0%;
+        font-size: 60px;
+        color: #CE778B;
+        font-weight: 600;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .newsletterAdjust{
+        padding-right: 20%;
+    }
+    .buttonHeight{
+        height: 100%;
+    }
+    .copyrightPadding{
+        padding-right: 0%;
+    }
+  }
+
+  @media only screen and (min-width: 990px) {
+    .newsletterAdjust{
+        padding-right: 0%;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .newsletterAdjust{
+        padding-right: 0%;
+    }
+    .copyrightPadding{
+        padding-right: 0%;
+    }
+    .formPadding{
+        padding-right: 0%;
+        }
+  }
+
+  @media only screen and (min-width: 1200px){
+    .newsletterAdjust{
+        padding-right: 0%;
+    }
+  }
+
+
+
+  @media only screen and (min-width: 1440px) {
+    .newsletterAdjust{
+        padding-right: 3%;
+    }
+    .copyrightPadding{
+        padding-right: 0%;
+    }
+    .formPadding{
+        padding-left: 0%;
+    }
+  }
+
+@media only screen and (min-width: 2000px) {
+    .newsletterAdjust{
+        padding-right: 5%;
+    }
+    .copyrightPadding{
+        padding-right: 0%;
+    }
+    .formPadding{
+    margin-right: 0%;
+    }
+  }
