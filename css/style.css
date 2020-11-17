@@ -1,0 +1,361 @@
+/* 
+Alex Ato
+Jorge Lopez
+Project #4 Business Redevelopment
+prototype link
+https://xd.adobe.com/view/cf8d23df-3eae-488d-ab14-feb73f3fdc43-9ade/screen/090feac2-c1fc-4725-9240-cc6a56d86ba2
+*/
+/* 
+  css add
+*/
+@font-face{
+    font-family: 'Lucida Calligraphy';
+    src: url(../fonts/lucida-calligraphy/LCALLIG.ttf);
+}
+@font-face{
+    font-family: 'Gabriola';
+    src: url(../fonts/gabriola/gabriola.ttf);
+}
+.lucidaFont{
+    font-family: 'Lucida Calligraphy';
+}
+
+.gabriolaFont{
+    font-family: 'Gabriola';
+}
+
+.georgiaFont{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.NoPadding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+
+/*Nav Links************************************************/
+
+.changeTex{
+    font-size: 25px;
+    color: #CE778B;
+    font-weight: 600;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+}
+.activePage{
+    text-decoration: underline;
+}
+.topColor{
+    background-color: #FEF9F9;
+}
+
+/*Resize is used for leggings adjustments **************************************/
+
+.reSize{
+    margin-left: 88%;
+    margin-top: 130px;
+}
+.reSize2{
+margin-left: 2%;
+}
+@media only screen and (max-width: 690px) {
+    .reSize {
+        margin-left: 75%;
+    margin-top: 80px;
+        
+    }
+  }
+.navbar-light{
+    color: #CE778B;
+}
+@media only screen and (max-width: 991px) {
+    .centered {
+        display: flex;
+        justify-content: end;
+        
+    }
+}
+.centerNav{
+    color: #CE778B;
+    border-color: #CE778B;
+    padding: 6px;
+ 
+}
+.heroImage{
+    height: 100%;
+    background-image: url("../image/logoHImage.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+a{
+    font-size: 30px;
+    color: #CE778B;
+    font-weight: 600;
+}
+.Bottomshadow {
+    
+    box-shadow: 0px 25px 20px 5px #e6e5e5; 
+}
+.nav-link:hover{
+    border-left: 5px solid #e6bec7;
+    border-right: 5px solid #e6bec7;
+    color: #CE778B;
+}
+.active{
+    text-decoration: underline;
+}
+
+.content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+/*Large Carousel on Home*********************************************/
+
+.picFormat{
+    width: 100%;
+}
+.blurr{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+.namePrice{
+    font-weight: 700;
+    font-size: 20px;
+}
+.topSpace{
+    margin-top: 4%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.picFormat2{
+    width: 85%;
+    height: auto;
+}
+@media only screen and (max-width: 600px) {
+    .topSpace {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+/*Top Picks*************************************************************/
+
+.topColor{
+    background-color: #FEF9F9;
+}
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.topPickLegging{
+    font-size: 25px;
+}
+.topPickPrice{
+    font-size: 23px;
+}
+
+/*Shirts  ********************************************************************/
+.marginTopSpace{
+    margin-top: 4%;
+}
+
+
+/*Footer  ********************************************************************/
+
+.lightGray{
+    background-color: #f2f2f2;
+}
+.blackoutOverlay:hover .overlay1 {
+      opacity: 1;
+}
+.instagramSize{
+    width: 45px;
+    height: auto;
+}
+.checkUsOutFont{
+    font-size:40px;
+}
+.buttonHeight{
+    height: 70%;
+}
+.card-body{
+    background-color: #FEF9F9;   
+}
+.card{
+    border: none;
+    background-color: #FEF9F9;
+}
+.news{
+    font-size: 50px;
+}
+.newsAdjust{
+    margin-left: 0%;
+}
+
+.text-muted{
+    color: rgb(0, 0, 0);
+}
+
+/*Footer  Responsiveness************************************************************/
+
+.newsletterAdjust{
+    padding-right: 0%;
+}
+
+.copyrightPadding{
+    padding-right: 0%;
+}
+
+.formPadding{
+    padding-right: 0%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;            /* Footer height */
+  }
+
+/*Gallery************************************************/
+.changeTitle{
+    margin-left: 16%;
+    font-size: 60px;
+    color: #CE778B;
+    font-weight: 600;
+}
+hr{
+    border-top: 3px solid #e6e6e6;
+}
+
+.whiteBG{
+    background-color: white;
+}
+
+video{
+    max-width: 100%;
+    height: auto;
+}
+
+.instagramSize2{
+    height: 48vh;
+}
+
+/*Media Queries************************************************************/
+
+@media only screen and (max-width: 425px){
+    .marginTopSpace{
+        margin-top: 10%;
+    }
+    .topSpace{
+        margin-top: 12%;
+    }
+
+    .picFormat2{
+        width: 100%;
+        height: auto;
+    }
+
+    .changeTitle{
+        margin-left: 0%;
+        font-size: 60px;
+        color: #CE778B;
+        font-weight: 600;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .newsletterAdjust{
+        padding-right: 20%;
+    }
+    .buttonHeight{
+        height: 100%;
+    }
+    .copyrightPadding{
+        padding-right: 0%;
+    }
+    .picFormat2{
+        width: 100%;
+        height: auto;
+    }
+  }
+
+  @media only screen and (min-width: 990px) {
+    .newsletterAdjust{
+        padding-right: 0%;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .newsletterAdjust{
+        padding-right: 0%;
+    }
+    .copyrightPadding{
+        padding-right: 0%;
+    }
+    .formPadding{
+        padding-right: 0%;
+        }
+  }
+
+  @media only screen and (min-width: 1200px){
+    .newsletterAdjust{
+        padding-right: 0%;
+    }
+  }
+
+
+
+  @media only screen and (min-width: 1440px) {
+    .newsletterAdjust{
+        padding-right: 3%;
+    }
+    .copyrightPadding{
+        padding-right: 0%;
+    }
+    .formPadding{
+        padding-left: 0%;
+    }
+    
+  }
+
+@media only screen and (min-width: 2000px) {
+    .newsletterAdjust{
+        padding-right: 5%;
+    }
+    .copyrightPadding{
+        padding-right: 0%;
+    }
+    .formPadding{
+    margin-right: 0%;
+    }
+    .picFormat2{
+        width: 85%;
+        height: auto;
+    }
+  }
