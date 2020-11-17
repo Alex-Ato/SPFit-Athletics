@@ -116,6 +116,15 @@ a{
     text-decoration: underline;
 }
 
+.content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
 /*Large Carousel on Home*********************************************/
 
 .picFormat{
@@ -225,6 +234,13 @@ a{
     padding-right: 0%;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;            /* Footer height */
+  }
+
 /*Gallery************************************************/
 .changeTitle{
     margin-left: 16%;
@@ -244,6 +260,11 @@ video{
     max-width: 100%;
     height: auto;
 }
+
+.instagramSize2{
+    height: 48vh;
+}
+
 /*Media Queries************************************************************/
 
 @media only screen and (max-width: 425px){
@@ -277,6 +298,10 @@ video{
     }
     .copyrightPadding{
         padding-right: 0%;
+    }
+    .picFormat2{
+        width: 100%;
+        height: auto;
     }
   }
 
@@ -316,6 +341,7 @@ video{
     .formPadding{
         padding-left: 0%;
     }
+    
   }
 
 @media only screen and (min-width: 2000px) {
@@ -327,5 +353,9 @@ video{
     }
     .formPadding{
     margin-right: 0%;
+    }
+    .picFormat2{
+        width: 85%;
+        height: auto;
     }
   }
