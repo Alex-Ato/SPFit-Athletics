@@ -5,19 +5,16 @@ Project #4 Business Redevelopment
 prototype link
 https://xd.adobe.com/view/cf8d23df-3eae-488d-ab14-feb73f3fdc43-9ade/screen/090feac2-c1fc-4725-9240-cc6a56d86ba2
 */
+
+
+
 /* 
-  css add
+   Font Assigning
 */
-@font-face{
-    font-family: 'Lucida Calligraphy';
-    src: url(../fonts/lucida-calligraphy/LCALLIG.ttf);
-}
+
 @font-face{
     font-family: 'Gabriola';
-    src: url(../fonts/gabriola/gabriola.ttf);
-}
-.lucidaFont{
-    font-family: 'Lucida Calligraphy';
+    src: url(../fonts/gabriola.ttf);
 }
 
 .gabriolaFont{
